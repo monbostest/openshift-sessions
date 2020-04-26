@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/rhel7
+FROM centos7
 MAINTAINER Nirpendra kumar
 ADD ./init.sh ./
 RUN yum install nmap-ncat --disablerepo=* --enablerepo=rhel-7-server-rpms -y && yum clean all -y 
