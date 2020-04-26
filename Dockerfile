@@ -1,4 +1,4 @@
-FROM centos7
+FROM centos:7
 MAINTAINER Nirpendra kumar
 ADD ./init.sh ./
 RUN yum install epel* nmap-ncat -y && yum clean all -y 
